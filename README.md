@@ -29,25 +29,25 @@ A clean, modern, and secure personal blog website designed for GitHub Pages. Fea
 
 ### 2. Customize Your Site
 
-#### Update Your Name and Info
+<h2 class="featured-title">Welcome to My Blog</h2>
+   <p class="featured-excerpt">This is where I share my thoughts...</p>
 
 Open `index.html` and edit:
 
 ```html
 <!-- Line 20: Change site title -->
-<h1 class="site-title">Your Name</h1>
+<h1 class="site-title">Diplochin</h1>
 
 <!-- Line 87: Update footer -->
-<p>&copy; 2025 Your Name. All rights reserved.</p>
+<p>&copy; 2025 Chineme. All rights reserved.</p>
 ```
 
 #### Update Social Links
 
 ```html
-<!-- Lines 89-91: Add your social media URLs -->
-<a href="https://twitter.com/yourusername" class="social-link">Twitter</a>
-<a href="https://github.com/yourusername" class="social-link">GitHub</a>
-<a href="https://linkedin.com/in/yourusername" class="social-link">LinkedIn</a>
+<a href="https://x.com/ChinemeValerie" class="social-link">X</a>
+<a href="https://soundcloud.com/chin_eme_ene" class="social-link">Soundcloud</a>
+<a href="https://www.linkedin.com/in/cvene/" class="social-link">LinkedIn</a>
 ```
 
 ## Adding New Blog Posts
