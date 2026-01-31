@@ -101,8 +101,8 @@ Copy this template and paste it inside the `<section class="posts-grid">` sectio
 
 **To get the YouTube Video ID:**
 1. Go to your YouTube video
-2. Copy the URL (e.g., `https://www.youtube.com/watch?v=dQw4w9WgXcQ`)
-3. The video ID is everything after `v=` (in this case: `dQw4w9WgXcQ`)
+2. Copy the URL (e.g., `https://www.youtube.com/watch?v=7sxVHYZ_PnA`)
+3. The video ID is everything after `v=` (in this case: `=7sxVHYZ_PnA`)
 4. Replace `VIDEO_ID_HERE` with your video ID
 
 ## Finding Free Images
