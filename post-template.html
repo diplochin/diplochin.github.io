@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog post description here">
+    <title>Post Title | Your Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for blog post page */
+        .post-header {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+            text-align: center;
+        }
+        
+        .post-header h1 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: -0.03em;
+        }
+        
+        .post-header .post-category {
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .post-header .post-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+        }
+        
+        .post-featured-image {
+            max-width: 1000px;
+            margin: 0 auto var(--spacing-xl);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .post-featured-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .post-body {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .post-body h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: -0.02em;
+        }
+        
+        .post-body h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .post-body p {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .post-body img {
+            width: 100%;
+            height: auto;
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+        }
+        
+        .post-body blockquote {
+            border-left: 4px solid var(--color-accent);
+            padding-left: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            font-style: italic;
+            color: var(--color-text-light);
+        }
+        
+        .post-body ul, .post-body ol {
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-md);
+        }
+        
+        .post-body li {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .post-body code {
+            background-color: var(--color-border);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-body pre {
+            background-color: var(--color-border);
+            padding: var(--spacing-sm);
+            border-radius: var(--border-radius);
+            overflow-x: auto;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .post-body pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-accent);
+            font-weight: 600;
+            transition: transform var(--transition-speed) ease;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-4px);
+        }
+        
+        @media (max-width: 768px) {
+            .post-header h1 {
+                font-size: 2rem;
+            }
+            
+            .post-body {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Your Name</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-link">← Back to all posts</a>
+        
+        <article>
+            <!-- Post Header -->
+            <header class="post-header">
+                <span class="post-category">Category Name</span>
+                <h1>Your Amazing Blog Post Title Goes Here</h1>
+                <div class="post-meta">
+                    <time class="post-date" datetime="2025-01-31">January 31, 2025</time>
+                    <span>•</span>
+                    <span class="read-time">8 min read</span>
+                </div>
+            </header>
+
+            <!-- Featured Image (Optional) -->
+            <div class="post-featured-image">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&auto=format&fit=crop" alt="Post featured image" loading="lazy">
+            </div>
+
+            <!-- Post Content -->
+            <div class="post-body">
+                <p>Start your blog post here with an engaging introduction that hooks your readers. This first paragraph is crucial for drawing people into your story or topic.</p>
+
+                <h2>Main Section Heading</h2>
+                
+                <p>Write your main content here. Break it up into logical sections with headings to make it easy to read and scan. Remember to:</p>
+                
+                <ul>
+                    <li>Keep paragraphs concise and focused</li>
+                    <li>Use headings to organize your thoughts</li>
+                    <li>Include images or videos to break up text</li>
+                    <li>Tell a story or share valuable insights</li>
+                </ul>
+
+                <p>Continue with more engaging content. You can add emphasis to <strong>important points</strong> or include <em>subtle emphasis</em> where needed.</p>
+
+                <h3>Subsection Example</h3>
+                
+                <p>Dive deeper into specific topics with subsections. This helps readers navigate your content more easily.</p>
+
+                <blockquote>
+                    "A powerful quote or key takeaway can emphasize important points and break up the visual flow of your content."
+                </blockquote>
+
+                <p>Continue your narrative after the quote, building on the ideas you've introduced.</p>
+
+                <!-- Image Example -->
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop" alt="Descriptive alt text" loading="lazy">
+
+                <h2>Embedding a YouTube Video</h2>
+                
+                <p>You can easily embed YouTube videos to enhance your posts. Simply replace the video ID in the code below:</p>
+
+                <!-- YouTube Video Embed -->
+                <div class="video-embed">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <p>Add commentary or context about the video you've embedded.</p>
+
+                <h2>Code Examples (Optional)</h2>
+                
+                <p>If you're writing technical content, you can include inline code like <code>const example = "code";</code> or code blocks:</p>
+
+                <pre><code>function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));</code></pre>
+
+                <h2>Conclusion</h2>
+                
+                <p>Wrap up your post with a strong conclusion that summarizes your main points or leaves readers with something to think about. You might also include a call-to-action, like inviting comments or sharing the post.</p>
+
+                <p>Thank you for reading! Feel free to share your thoughts or connect with me on social media.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+                <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
